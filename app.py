@@ -206,9 +206,9 @@ def init_database():
             
         cursor.execute("SELECT COUNT(*) FROM users")
         if cursor.fetchone()[0] == 0:
-            cursor.execute("INSERT INTO users VALUES ('admin', '123', 'المدير العام', 'ADMIN', 'مدير النظام')")
-            cursor.execute("INSERT INTO users VALUES ('sales', '123', 'مسؤول المبيعات', 'SALES', 'مسؤول مبيعات')")
-            cursor.execute("INSERT INTO users VALUES ('accountant', '123', 'المحاسب المالي', 'ACCOUNTANT', 'محاسب')")
+            cursor.execute("INSERT INTO users VALUES ('admin', 'Smart@2026', 'المدير العام', 'ADMIN', 'مدير النظام')")
+            cursor.execute("INSERT INTO users VALUES ('sales', 'Smart@2026', 'مسؤول المبيعات', 'SALES', 'مسؤول مبيعات')")
+            cursor.execute("INSERT INTO users VALUES ('accountant', 'Smart@2026', 'المحاسب المالي', 'ACCOUNTANT', 'محاسب')")
             
         cursor.execute("SELECT COUNT(*) FROM quotations")
         if cursor.fetchone()[0] == 0:
